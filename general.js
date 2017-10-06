@@ -28,7 +28,7 @@ $(document).ready(function(){
                 {
                     document.getElementById("signInError").innerHTML="Please fill all the required fields.";  
                 }
-                else if(response.trim()=="success")
+                else
                 {
                     window.location.href="userprofile.php?id="+response.trim();
                 }
@@ -49,6 +49,54 @@ $(document).ready(function(){
 /////////////////////////////////////////////////////////////////////////////
 //sign-in
 $(document).ready(function(){
+    $(".loginForm").submit(function(e){ 
+        e.preventDefault();
+        //alert("undau");
+        var formData = new FormData(this);  
+        /*document.getElementById("fpError").innerHTML="Sending mail";*/
+        //alert("here");
+        $.ajax
+        ({
+            type: 'POST',
+            url: 'loginh.php',
+            data:formData,
+            //dataType: 'text',  // what to expect back from the PHP script, if anything
+            cache: false,
+            contentType: false,
+            processData: false,                
+            success: function (response) 
+            {
+                //alert("ikde ala re!");
+                //alert(response);                               
+                if(response.trim()=="wrong input")     
+                {
+                    document.getElementById("logInError").innerHTML="Your email or password is wrong";  
+                }
+                else if(response.trim()=="not all filled")     
+                {
+                    document.getElementById("logInError").innerHTML="Please fill all the required fields.";  
+                }
+                else
+                {
+                    window.location.href="userprofile.php?id="+response.trim();
+                }
+                //alert(response);
+                
+                
+            },                
+            error: function(xhr, status, error) {
+                alert(xhr.responseText);
+            }              
+        });
+        
+        return false;
+    })
+});
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+//SOS system
+$(document).ready(function(){
     $(".sos_form").submit(function(e){ 
         e.preventDefault();
         //alert("undau");
@@ -66,7 +114,7 @@ $(document).ready(function(){
             processData: false,                
             success: function (response) 
             {
-                alert(response);
+                //alert(response);
                 if(response.trim()=="success")
                 {
                     document.getElementById("sos_error").innerHTML="ALL EMERGENCY MESSAGES HAVE BEEN SUCCESSFULLY SENT..PLEASE DON'T GIVE UP HOPE";
