@@ -6,8 +6,8 @@ ini_set('max_execution_time', 300); //setting the maximum execution time for mai
 
 if(isset($_POST['datetime']))
 {
-	$userId=$_SESSION['id'];
-	$datetime=$_POST['datetime'];
+	$userId=mysqli_real_escape_string($conn,$_SESSION['id']);
+	$datetime=mysqli_real_escape_string($conn,$_POST['datetime']);
 
 	$sql1="INSERT INTO ms_schedule_table (userId,eventType,datetime) VALUES ('$userId',3,'$datetime')";	
 	$result1=mysqli_query($conn,$sql1);

@@ -6,7 +6,7 @@ ini_set('max_execution_time', 300); //setting the maximum execution time for mai
 
 if(isset($_POST['id']))
 {
-	$userId=$_POST['id'];
+	$userId=mysqli_real_escape_string($conn,$_POST['id']);
 
 	$sql="SELECT e_email_1,e_email_2,name FROM memberstable WHERE id='$userId'";
 	$result=mysqli_query($conn,$sql);
