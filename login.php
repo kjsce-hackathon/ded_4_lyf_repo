@@ -18,7 +18,7 @@
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
 
-
+	<link rel="stylesheet" type="text/css" href="login1.css">
     <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
     <script type="text/javascript">
@@ -34,17 +34,19 @@
 if(!isset($_SESSION['id']))
 {
 ?>
-<div class="login">
+<div class="background-image">
+	<div class="login">
 
-	<h1>Login</h1>
-	<form class="loginForm" action="" method="POST">
-		<p class="prompt-style">Email<span style="color:red">*</span>:</p>
-		<input type="text" name="email" class="" style="font-size:18px;"><br>		
-		<p class="prompt-style">Password<span style="color:red">*</span>:</p>
-		<input type="password" name="pwd" class="" style="font-size:18px;"><br>
-		<button class="btn" id="loginbutton" type="submit">Login</button>
-	</form>
-	<p id="logInError"></p>
+		<h1 style="width:140px;display:block;margin:0 auto">Login</h1>
+		<form class="loginForm" action="" method="POST">
+			<p class="prompt-style">Email<span style="color:red">*</span>:</p>
+			<input type="text" name="email" class="" style="font-size:18px;"><br>		
+			<p class="prompt-style">Password<span style="color:red">*</span>:</p>
+			<input type="password" name="pwd" class="" style="font-size:18px;"><br>
+			<button class="btn" id="loginbutton" type="submit" style="cursor:pointer">Login</button>
+		</form>
+		<p id="logInError" style="color:white"></p>
+	</div>
 </div>
 <?php
 }

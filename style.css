@@ -1,0 +1,203 @@
+body
+
+{
+
+	margin: 0;
+
+	padding: 0;
+
+	/*background: url(.jpg);*/
+
+	background-size: cover;
+
+	/*font-family: sans-serif;*/
+	font-family: 'Open Sans','sans-serif';
+
+}
+
+.signup{  
+
+	display:block;
+
+	margin: 0 auto;
+
+	padding-top: 10px;
+
+	top: 50%
+
+	left: 50%;
+
+	/*transform: translate(-50%,-50%);*/
+
+	width: 400px;
+
+	height: auto;
+
+	box-sizing: border-box;
+
+	background: rgba(0,0,0,.5);
+
+	padding-bottom: 10px;
+
+border-radius: 10px;
+
+margin-top: 10px;
+
+box-sizing: border-box;
+
+margin-top: 30px;
+
+}
+
+.background-image {
+
+  /*position: fixed;*/
+
+  left: 0;
+
+  right: 0;
+
+  z-index: -10;
+
+background-size: cover;
+
+  display: block;
+
+  background-image: url('oscar background.1jpg.JPG');
+
+  width: 100%;
+
+  height: 100%;
+
+overflow: auto;
+
+}
+
+
+
+h1
+
+{
+
+	text-align: center;
+
+	font-size: 40px;
+
+	color: #ffffff;
+
+}
+
+
+
+form{
+
+	margin: 20px auto;
+
+	width: 300px;
+
+	color: #000000;
+
+}
+
+input{
+
+	padding: 10px;
+
+	font-size: inherit;
+
+}
+
+input[type="text"]{
+
+	display: block;
+
+	margin-bottom: 0px;
+
+	border-radius: 5px;
+
+	width: 90%;
+
+	border:2px solid #000000;
+
+	
+
+}
+
+input[type="password"]{
+
+	display: block;
+
+	margin-bottom: 0px;
+
+	width: 90%;
+
+	border-radius: 5px;
+
+	border:2px solid #000000;
+
+	
+
+}
+
+input[type="email"]{
+
+	display: block;
+
+	border-radius: 5px;
+
+	margin-bottom: 0px;
+
+	width: 90%;
+
+	border:2px solid #000000;
+
+	
+
+}
+
+
+
+label{
+
+	color: white;
+
+}
+
+input[type="submit"]{
+
+	width: 300px;
+
+	height: 35px;
+
+	border: none;
+
+	background: #000000
+
+	
+
+border-radius: 5px;
+
+}
+
+.prompt-style{
+
+	color: #ffffff;
+
+}
+
+.btn{
+
+	width: 300px;
+
+	height: 50px;
+
+	background: #000;
+
+	border-radius: 15px;
+
+	color: #ffffff;
+
+	font-size: 18px;
+
+}
+

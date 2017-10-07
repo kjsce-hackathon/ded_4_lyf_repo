@@ -14,7 +14,7 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-     
+     <link rel="stylesheet" type="text/css" href="style.css">
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
 
@@ -34,36 +34,39 @@
 if(!isset($_SESSION['id']))
 {
 ?>
-<div class="signup">
+<div class="background-image">
 
-	<h1>New User? Sign Up.</h1>
-	<form class="signupForm" action="" method="POST">
-		<p class="prompt-style">Full Name<span style="color:red">*</span>:</p>
-		<input type="text" name="name" class="" style="font-size:18px;"><br>
-		<p class="prompt-style">Email<span style="color:red">*</span>:</p>
-		<input type="text" name="email" class="" style="font-size:18px;"><br>		
-		<p class="prompt-style">Password<span style="color:red">*</span>:</p>
-		<input type="password" name="pwd" class="" style="font-size:18px;"><br>
-		<p class="prompt-style">Phone Number<span style="color:red">*</span>:</p>
-		<input type="text" name="phone" class="" style="font-size:18px;"><br>
-		<p class="prompt-style">Emergency Phone Number 1<span style="color:red">*</span>:</p>
-		<input type="text" name="e_phone_1" class="" style="font-size:18px;"><br>
-		<p class="prompt-style">Emergency Phone Number 2<span style="color:red">*</span>:</p>
-		<input type="text" name="e_phone_2" class="" style="font-size:18px;"><br>
-		<p class="prompt-style">Emergency Email 1<span style="color:red">*</span>:</p>
-		<input type="text" name="e_email_1" class="" style="font-size:18px;"><br>
-		<p class="prompt-style">Emergency Email 2<span style="color:red">*</span>:</p>
-		<input type="text" name="e_email_2" class="" style="font-size:18px;"><br>	
-		<?php 
-		/*if(isset($_GET['lastpage'])){
-			$lastpage=$_GET['lastpage'];
-			//echo $lastpage;
-			echo '<input type="hidden" name="lastpage" value="'.htmlentities($lastpage).'"></input>';//passing the lastpage
-		}*/
-		?>
-		<button class="btn" id="signupbutton" type="submit">Sign up</button>
-	</form>
-	<p id="signInError"></p>
+	<div class="signup">
+
+		<h1>New User? Sign Up.</h1>
+		<form class="signupForm" action="" method="POST">
+			<p class="prompt-style">Full Name<span style="color:red">*</span>:</p>
+			<input type="text" name="name" class="" style="font-size:18px;"><br>
+			<p class="prompt-style">Email<span style="color:red">*</span>:</p>
+			<input type="text" name="email" class="" style="font-size:18px;"><br>		
+			<p class="prompt-style">Password<span style="color:red">*</span>:</p>
+			<input type="password" name="pwd" class="" style="font-size:18px;"><br>
+			<p class="prompt-style">Phone Number<span style="color:red">*</span>:</p>
+			<input type="text" name="phone" class="" style="font-size:18px;"><br>
+			<p class="prompt-style">Emergency Phone Number 1<span style="color:red">*</span>:</p>
+			<input type="text" name="e_phone_1" class="" style="font-size:18px;"><br>
+			<p class="prompt-style">Emergency Phone Number 2<span style="color:red">*</span>:</p>
+			<input type="text" name="e_phone_2" class="" style="font-size:18px;"><br>
+			<p class="prompt-style">Emergency Email 1<span style="color:red">*</span>:</p>
+			<input type="text" name="e_email_1" class="" style="font-size:18px;"><br>
+			<p class="prompt-style">Emergency Email 2<span style="color:red">*</span>:</p>
+			<input type="text" name="e_email_2" class="" style="font-size:18px;"><br>	
+			<?php 
+			/*if(isset($_GET['lastpage'])){
+				$lastpage=$_GET['lastpage'];
+				//echo $lastpage;
+				echo '<input type="hidden" name="lastpage" value="'.htmlentities($lastpage).'"></input>';//passing the lastpage
+			}*/
+			?>
+			<button class="btn" id="signupbutton" type="submit">Sign up</button>
+		</form>
+		<p id="signInError" style="color:white"></p>
+	</div>
 </div>
 <?php
 }

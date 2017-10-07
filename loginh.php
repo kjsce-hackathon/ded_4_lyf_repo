@@ -3,7 +3,6 @@
 session_start();
 
 include 'dbh.php';
-
 //ini_set('max_execution_time', 300); //setting the maximum execution time for mail sending
 
 $response="";
