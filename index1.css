@@ -1,0 +1,74 @@
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(.jpg);
+	background-size: cover;
+	/*font-family: sans-serif;*/
+	font-family: 'Open Sans','sans-serif';
+	background-color: #ffffff;
+}
+.bckgrund{
+	/*position: fixed;*/
+  left: 0;
+  right: 0;
+  z-index: -10;
+
+  display: block;
+  background-image: url('depositphotos_34736153-stock-photo-old-age-couple.jpg');
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+  
+}
+.d{
+	display:block;
+	margin: 0 auto;
+	padding-top: 10px;
+	top: 50%
+	left: 50%;
+	/*transform: translate(-50%,-50%);*/
+	width: 435px;
+	height: auto;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.0);
+	padding-bottom: 10px;
+	border-radius: 10px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	margin-top: 30px;
+
+}
+.imgage{
+	width: 400px;
+	height:400px;
+}
+.signup{
+	margin: 0px auto 0px auto;
+	text-decoration: none;
+	display: block;
+	width: 300px;
+	height: 50px;
+	background: #000;
+	border-radius: 15px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	/*margin-bottom: 0px;*/
+	padding-top: 25px;
+}
+.login{
+	margin: 0 auto;
+	text-decoration: none;
+	display: block;
+	width: 300px;
+	height: 50px;
+	background: #000;
+	border-radius: 15px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 5px;
+	padding-top: 25px;
+}
